@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color2);
+  background-color: var(--color5);
+  font-size: larger;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --color1: #5E7CE2;
+  --color2: #f4f5ff;
+  --color3: #CFDEE7;
+  --color4: #92B4F4;
+  --color5: #3A3B3c;    
+}
+
+h1, h2 {
+  color: var(--color4);
+}
+
+/* header */
+
+header {
+  background-image: url("./assets/background/background.jpg");
+}
+
+/* nav */
+
+li {
+  list-style: none;
+}
+
+nav  li {
+  cursor: pointer;
+  color: var(--color4);
+}
+
+.navActive {
+  color: var(--color3);
+}
+
+/* portfolio */
+
+.project-container a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.projectcard {
+  background-size: cover;
+  height: 200px;
+}
+
+.projectbox {
+  z-index: 2;
+  background-color: var(--color1);
+}
+
+.project1 {
+  background-image: url("./assets/cards/card1.png");
+}
+
+.project2 {
+  background-image: url("./assets//cards/card2.png");
+}
+
+.project3 {
+  background-image: url("./assets//cards/card3.png");
+}
+
+.project4 {
+  background-image: url("./assets//cards/card4.png");
+  background-position: center;
+}
+
+.project5 {
+  background-image: url("./assets//cards/card5.png");
+}
+
+.project6 {
+  background-image: url("./assets//cards/card6.png");
+  background-position: center;
+}
+
+/* contact */
+
+form {
+  width: 50%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+/* resume */
+
+.resume a {
+  text-decoration: none;
+  color: var(--color4);
+}
+
+/* footer */
+
+footer a {
+  text-decoration: none;
+  color: var(--color4);
+}
