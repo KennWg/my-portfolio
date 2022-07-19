@@ -14,21 +14,30 @@ code {
 }
 
 :root {
-  --color1: #5E7CE2;
-  --color2: #f4f5ff;
-  --color3: #CFDEE7;
-  --color4: #92B4F4;
-  --color5: #3A3B3c;    
+  --color1: #F4E04D;
+  --color2: #042A2B;
+  --color3: #54F2F2;
+  --color4: #5EB1BF;
+  --color5: #FCFCFC;    
 }
 
 h1, h2 {
   color: var(--color4);
 }
 
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 /* header */
 
 header {
-  background-image: url("./assets/background/background.jpg");
+  background-color: var(--color2);
 }
 
 /* nav */

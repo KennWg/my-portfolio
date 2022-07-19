@@ -17,14 +17,10 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       ></Header>
       <main>
-        {currentCategory==='about' && 
-        <About></About>}
-        {currentCategory==='portfolio' && 
-        <Portfolio></Portfolio>}
-        {currentCategory==='contact' && 
-        <ContactForm></ContactForm>}
-        {currentCategory==='resume' && 
-        <Resume></Resume>}
+        <Portfolio></Portfolio>
+        <About></About>
+        <Resume></Resume>
+        <ContactForm></ContactForm>
       </main>
       <Footer></Footer>
     </div>
