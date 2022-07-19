@@ -59,6 +59,7 @@ nav  li {
 
 .project-container a {
   text-decoration: none;
+  border: 2px solid var(--color3);
   color: var(--color2);
 }
 
