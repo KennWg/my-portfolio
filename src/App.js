@@ -16,6 +16,8 @@ function App() {
       <Header currentCategory={currentCategory}
         setCurrentCategory={setCurrentCategory}
       ></Header>
+      <h1 className="text-center mt-5">Kenneth Wong</h1>
+      <p className="text-center">Welcome to my portfolio.  I'm a new developer passionate about exploring new technologies and projects.  Want to see some of my projects?</p>
       <main>
         <Portfolio></Portfolio>
         <About></About>

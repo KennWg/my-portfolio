@@ -21,7 +21,7 @@ code {
   --color5: #FCFCFC;    
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   color: var(--color4);
 }
 
@@ -31,6 +31,10 @@ h1 {
 
 h2 {
   font-weight: 800;
+  text-decoration: underline;
+}
+
+h3 {
   text-decoration: underline;
 }
 
@@ -59,13 +63,14 @@ nav  li {
 
 .project-container a {
   text-decoration: none;
-  border: 2px solid var(--color3);
-  color: var(--color2);
 }
 
 .projectcard {
   background-size: cover;
   height: 200px;
+  border: 2px solid var(--color3);
+  color: var(--color2);
+  cursor: pointer;
 }
 
 .projectbox {
@@ -87,7 +92,6 @@ nav  li {
 
 .project4 {
   background-image: url("./assets//cards/card4.png");
-  background-position: center;
 }
 
 .project5 {
@@ -138,4 +142,40 @@ textarea {
 footer a {
   text-decoration: none;
   color: var(--color4);
+}
+
+/* modal */
+
+.modalBackground {
+	background: rgba(245, 240, 240, 0.815);
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.modalContainer {
+	background: var(--color5);
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 10px auto;
+	padding: 15px;
+	width: 960px;
+}
+
+.modalContainer p {
+  text-indent: 10%;
+}
+
+.modalTitle {
+	margin-bottom: 25px;
+}
+
+.modalImage {
+  object-fit: scale-down;
+  max-height: 600px;
+  width: 100%;
 }
