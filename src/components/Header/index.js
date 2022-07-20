@@ -4,7 +4,11 @@ import Nav from "../Nav";
 function Header(props) {
     const {
         currentCategory,
-        setCurrentCategory
+        setCurrentCategory,
+        portfolioRef,
+        aboutRef,
+        contactRef,
+        handleScroll
     } = props;
 
     return (
@@ -16,6 +20,10 @@ function Header(props) {
                 <Nav
                     currentCategory={currentCategory}
                     setCurrentCategory={setCurrentCategory}
+                    handleScroll={handleScroll}
+                    portfolioRef={portfolioRef}
+                    aboutRef={aboutRef}
+                    contactRef={contactRef}
                 ></Nav>
             </div>
         </header>

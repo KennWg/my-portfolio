@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Modal from "../Modal";
 
-function Portfolio() {
+function Portfolio(props) {
+
+    const {portfolioRef} = props;
 
     const [currentProject, setCurrentProject] = useState();
     const [modalOpen, setModalOpen] = useState(false);
@@ -12,7 +14,7 @@ function Portfolio() {
     }
 
     return (
-        <div className="w-100">
+        <div className="w-100" ref={portfolioRef}>
             {modalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
             <h2 className="mx-5 my-5 text-center">Portfolio</h2>
             <div className="d-flex flex-wrap portfolio-container justify-content-center">

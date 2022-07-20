@@ -1,8 +1,11 @@
 import React from "react";
 
-function About() {
+function About(props) {
+
+    const {aboutRef} = props;
+
     return (
-        <div className="w-100 aboutContainer">
+        <div ref={aboutRef} className="w-50 aboutContainer text-center justify-content-center">
             <h2 className="mx-5 my-5 text-center">About Me</h2>
             <p className="mx-5 py-2">Hello, welcome to the portfolio I made with React.  I've filled the page with some projects I've done over the last year or so as I learned more technologies.  I graduated from the University of Toronto Mississauga with a BSc in forensic science and psychology and was working in the security systems field for a few years.  
             I decided recently that it's time for a change, and I enrolled in a bootcamp with the University of Toronto to pursue something I always had an interest in.
