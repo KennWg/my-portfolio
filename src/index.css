@@ -162,6 +162,7 @@ textarea:focus {
 footer a {
   text-decoration: none;
   color: var(--color4);
+  font-weight: bold;
 }
 
 /* modal */
