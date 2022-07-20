@@ -12,8 +12,8 @@ function Modal({currentProject, onClose}) {
                 <img className="modalImage" src={require(`../../assets/cards/card${index}.png`)} alt={`${name}`}></img>
                 <p className="pt-4">{description}</p>
                 <div className="modalLinks d-flex justify-content-center pb-3">
-                    <a href={projectLink} className="px-2">Project can be found here!</a>
-                    <a href={githubLink} className="px-2">Click here for github</a>
+                    <a href={projectLink} className="px-2" target="_blank" rel="noreferrer noopener">Click for Project</a>
+                    <a href={githubLink} className="px-2" target="_blank" rel="noreferrer noopener">Click for Github</a>
                 </div>
                 <div className="buttonWrapper w-100 justify-content-center d-flex">
                     <button type="button" className="text-align-center" onClick={onClose}>Close</button>
