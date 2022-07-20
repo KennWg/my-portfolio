@@ -26,7 +26,7 @@ function Nav(props) {
         }
     }
 
-    const pagePosition = usePagePosition();
+    usePagePosition(setCurrentCategory,aboutRef,contactRef);
 
     return(
         <nav className="w-100">
