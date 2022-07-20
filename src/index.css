@@ -67,15 +67,17 @@ nav  li {
 
 .projectcard {
   background-size: cover;
+  opacity: 0.5;
   height: 200px;
   border: 2px solid var(--color3);
   color: var(--color2);
   cursor: pointer;
+  transition: opacity 0.5s ease, scale 0.5s ease;
 }
 
-.projectbox {
-  z-index: 2;
-  background-color: var(--color1);
+.projectcard:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .project1 {
