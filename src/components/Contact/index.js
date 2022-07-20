@@ -1,10 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
-function ContactForm() {
+function ContactForm(props) {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
+    const {contactRef} = props;
 
     const nameEl = useRef(0);
     const emailEl = useRef(0);
@@ -41,9 +42,9 @@ function ContactForm() {
     };
 
     return (
-        <section className='px-2 py-2'>
-            <h1>Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+        <section className='px-2 py-2' ref={contactRef}>
+            <h2 className='mx-5 my-5 text-center'>Contact me</h2>
+            <form id="contact-form ml-5" onSubmit={handleSubmit}>
                 <div className='py-2 px-2 d-flex row'>
                     <label htmlFor="name" className='px-2 col-3'>Name:</label>
                     <input type="text" className="col-9" defaultValue={name} onBlur={handleChange} name="name" ref={nameEl}/>
@@ -61,7 +62,7 @@ function ContactForm() {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <div className='contact-button-wrapper d-flex justify-content-center pt-2'><button type="submit">Submit</button></div>
             </form>
         </section>
     )
