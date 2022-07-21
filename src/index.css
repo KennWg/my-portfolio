@@ -252,4 +252,8 @@ footer a {
     margin-left: 5%;
     margin-right: 5%;
   }
+
+  .form-message{
+    display: none;
+  }
 }

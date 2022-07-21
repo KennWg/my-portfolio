@@ -54,8 +54,8 @@ function ContactForm(props) {
                     <input type="email" className="col-9" defaultValue={email} onBlur={handleChange} name="email" ref={emailEl}/>
                 </div>
                 <div className='py-2 px-2 d-flex row'>
-                    <label htmlFor="message" className='px-2 col-3'>Message:</label>
-                    <textarea name="message" className="col-9" defaultValue={message} onBlur={handleChange} rows="5" ref={messageEl}/>
+                    <label htmlFor="message" className='px-2 col-3 form-message'>Message:</label>
+                    <textarea name="message" className="col-md-9 col-12" defaultValue={message} onBlur={handleChange} rows="5" ref={messageEl}/>
                 </div>
                 {errorMessage && (
                     <div>
