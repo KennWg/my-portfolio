@@ -18,7 +18,7 @@ function Portfolio(props) {
             {modalOpen && <Modal currentProject={currentProject} onClose={toggleModal} />}
             <h2 className="mx-5 my-5 text-center">Portfolio</h2>
             <div className="d-flex flex-wrap portfolio-container justify-content-center">
-                <div className="d-flex flex-wrap mx-1 py-3 project-container col-5 justify-content-center">
+                <div className="d-flex flex-wrap mx-1 py-3 project-container col-md-5 col-10 justify-content-center">
                     <div className="projectcard project1 w-75" onClick={() => toggleModal({
                         name: "No Fraud",
                         techs: "HTML/CSS/Javascript",
@@ -28,7 +28,7 @@ function Portfolio(props) {
                         githubLink: "https://github.com/KennWg/no-fraud"
                     })}></div>
                 </div>
-                <div className="d-flex flex-wrap mx-1 py-3 project-container col-5 justify-content-center">
+                <div className="d-flex flex-wrap mx-1 py-3 project-container col-md-5 col-10 justify-content-center">
                     <div className="projectcard project2 w-75" onClick={() => toggleModal({
                         name: "Pet Buddies",
                         techs: "Node.js, Express.js, MySQL, Handlebars.js",
@@ -38,7 +38,7 @@ function Portfolio(props) {
                         githubLink: "https://github.com/KennWg/pet-buddies"
                     })}></div>
                 </div>
-                <div className="d-flex flex-wrap mx-1 py-3 project-container col-5 justify-content-center">
+                <div className="d-flex flex-wrap mx-1 py-3 project-container col-md-5 col-10 justify-content-center">
                     <div className="projectcard project3 w-75" onClick={() => toggleModal({
                         name: "Pet Alert",
                         techs: "MERN Stack (MongoDb, Express.js, React, Node.js)",
@@ -48,7 +48,7 @@ function Portfolio(props) {
                         githubLink: "https://github.com/KennWg/pet-finder"
                     })}></div>
                 </div>
-                <div className="d-flex flex-wrap mx-1 py-3 project-container col-5 justify-content-center">
+                <div className="d-flex flex-wrap mx-1 py-3 project-container col-md-5 col-10 justify-content-center">
                     <div className="projectcard project4 w-75" onClick={() => toggleModal({
                         name: "Pathfinder",
                         techs: "React, Javascript",
@@ -58,7 +58,7 @@ function Portfolio(props) {
                         githubLink: "https://github.com/KennWg/pathfinder"
                     })}></div>
                 </div>
-                <div className="d-flex flex-wrap mx-1 py-3 project-container col-5 justify-content-center">
+                <div className="d-flex flex-wrap mx-1 py-3 project-container col-md-5 col-10 justify-content-center">
                     <div className="projectcard project5 w-75" onClick={() => toggleModal({
                         name: "Sorting Visualizer",
                         techs: "React, Javascript",
@@ -68,7 +68,7 @@ function Portfolio(props) {
                         githubLink: "https://github.com/KennWg/sorting-app"
                     })}></div>
                 </div>
-                <div className="d-flex flex-wrap mx-1 py-3 project-container col-5 justify-content-center">
+                <div className="d-flex flex-wrap mx-1 py-3 project-container col-md-5 col-10 justify-content-center">
                     <div className="projectcard project6 w-75" onClick={() => toggleModal({
                         name: "Tech Blog",
                         techs: "MySQL, Express.js, Handlebars.js",

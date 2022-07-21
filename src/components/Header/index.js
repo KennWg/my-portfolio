@@ -12,11 +12,11 @@ function Header(props) {
     } = props;
 
     return (
-        <header className="d-flex flex-row px-3 py-3">
-            <div className="d-flex col-3">
+        <header className="d-flex flex-row px-3 py-3 flex-wrap">
+            <div className="d-flex col-12 col-lg-3">
                 <h1>Kenneth Wong</h1>
             </div>
-            <div className="d-flex col-9">
+            <div className="d-flex col-12 col-lg-9">
                 <Nav
                     currentCategory={currentCategory}
                     setCurrentCategory={setCurrentCategory}

@@ -54,8 +54,11 @@ li {
 }
 
 nav  li {
-  cursor: pointer;
   color: var(--color4);
+}
+
+nav li span {
+  cursor: pointer;
 }
 
 .navActive {
@@ -155,6 +158,7 @@ textarea:focus {
 .resume a {
   text-decoration: none;
   color: var(--color4);
+  font-weight: 500px;
 }
 
 /* footer */
@@ -163,6 +167,7 @@ footer a {
   text-decoration: none;
   color: var(--color4);
   font-weight: bold;
+  font-size: larger;
 }
 
 /* modal */
@@ -211,4 +216,40 @@ footer a {
 
 .aboutContainer p {
   text-indent: 5%;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px){
+  .aboutContainer{
+    width: 75%!important;
+  }
+
+  .projectcard {
+    opacity: 1;
+  }
+
+  form{
+    width: 75%;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .aboutContainer{
+    width: 90%!important;
+  }
+
+  form{
+    width: 100%;
+  }
+
+  nav ul{
+    width: 100%;
+  }
+
+  nav li{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }

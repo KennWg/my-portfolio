@@ -31,9 +31,9 @@ function Nav(props) {
     return(
         <nav className="w-100">
             <ul className="d-flex flex-row justify-content-end">
-                <li className={`col-2 pt-2 ${currentCategory === 'portfolio' && 'navActive'}`}><span onClick={() => clickHandler('portfolio')}>Portfolio</span></li>
-                <li className={`col-2 pt-2 ${currentCategory === 'about' && 'navActive'}`}><span onClick={() => clickHandler('about')}>About Me</span></li>
-                <li className={`col-2 pt-2 ${currentCategory === 'contact' && 'navActive'}`}><span onClick={() => clickHandler('contact')}>Contact</span></li>
+                <li className={`col-lg-2 col-3 pt-2 ${currentCategory === 'portfolio' && 'navActive'}`}><span onClick={() => clickHandler('portfolio')}>Portfolio</span></li>
+                <li className={`col-lg-2 col-3 pt-2 ${currentCategory === 'about' && 'navActive'}`}><span onClick={() => clickHandler('about')}>About</span></li>
+                <li className={`col-lg-2 col-3 pt-2 ${currentCategory === 'contact' && 'navActive'}`}><span onClick={() => clickHandler('contact')}>Contact</span></li>
             </ul>
         </nav>
     )

@@ -14,7 +14,7 @@ export function usePagePosition(setCategory,aboutRef,contactRef) {
 
         if(pagePosition < aboutRef.current.offsetTop - 150){
             setCategory("portfolio");
-        } else if (pagePosition > aboutRef.current.offsetTop + 200){
+        } else if (pagePosition > aboutRef.current.offsetTop + 100){
             setCategory("contact");
         } else {
             setCategory("about");
